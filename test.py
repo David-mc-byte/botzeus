@@ -1335,6 +1335,7 @@ def get_text_messages(message):
 		product_hqd = types.ReplyKeyboardMarkup(resize_keyboard=True)
 		product_1 = types.KeyboardButton('Проверить оплату')
 		product_hqd.add(product_1)
+		print("Мейби оплата")
 		bot.send_message(chat_id, "Ожидайте проверку оплаты или же обратитесь к саппорту", parse_mode="Markdown", reply_markup=product_hqd)
 	else:
 		bot.send_message(chat_id, "*Неизвестная* команда", parse_mode="Markdown", reply_markup=markup)
