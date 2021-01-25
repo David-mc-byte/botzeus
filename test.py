@@ -773,7 +773,6 @@ def query_handler(call):
 		product_hqd = types.ReplyKeyboardMarkup(resize_keyboard=True)
 		product_1 = types.KeyboardButton('Проверить оплату')
 		product_hqd.add(product_1)
-		print("Мейби оплата")
 		bot.send_message(call.message.chat.id, "Метод оплаты EasyPay. Чтобы оплатить товар, переведите на кошелек  51646449 сумму указаную выше.. После оплаты: нажмите на кнопку *Проверить оплату*. Оплачивать можно частями с разных кошельков в течении действия брони на кошелек 51646449. *Если этого фото не будет выдано автоматически, обратитесь к саппорту*✅", parse_mode="Markdown", reply_markup=product_hqd)
 		
 		
